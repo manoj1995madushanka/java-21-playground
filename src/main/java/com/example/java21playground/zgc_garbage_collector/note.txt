@@ -1,0 +1,17 @@
+Generational ZGC
+ Garbage collectors remove unused objects
+ It looks heap and remove not used objects
+
+Two things to consider when selecting garbage collector
+    Throughput : The percentage of time not spent doing garbaage collection
+        If application handles high load need to more consider this
+    Latency : The responsiveness of the application
+        Used by human or process consider more latency
+
+ZGC garbage collector comes with java 15
+
+For use generational ZGC garbage collector use below command
+    java --XX:+UseZGC -XX:+ZGenerational
+
+
+
